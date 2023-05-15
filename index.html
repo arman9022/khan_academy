@@ -259,42 +259,61 @@
                                                         <hr>
 
                                                         <div class="tab-content" id="v-pills-tabContent">
-
+                                                            <!-- QUESTION 1 -->
                                                             <div class="tab-pane fade show active" id="v-pills-q-1" role="tabpanel" aria-labelledby="v-pills-q-1-tab" tabindex="0">
 
                                                                 <h5>Which ordered pair is a solution of the equation?</h5>
-                                                                <h5>x+7y=17</h5>
+                                                                <h5>x + 7y = 17</h5>
                                                                 <p>Choose 1 answer:</p>
                                                                 <div class="form-check">
-                                                                <input class="form-check-input" type="radio" name="q1" id="q1-1">
+                                                                <input class="form-check-input" type="radio" name="q1" id="q1-1" value="ans1-1">
                                                                 <label class="form-check-label" for="q1-1">
-                                                                    Only (10,1)(10,1)
+                                                                    Only (10,1)
                                                                 </label>
                                                                 </div>
                                                                 <div class="form-check">
-                                                                <input class="form-check-input" type="radio" name="q1" id="q1-2">
+                                                                <input class="form-check-input" type="radio" name="q1" id="q1-2" value="ans1-2">
                                                                 <label class="form-check-label" for="q1-2">
-                                                                    Only (−4,3)(−4,3)
+                                                                    Only (−4,3)
                                                                 </label>
                                                                 </div>
                                                                 <div class="form-check">
-                                                                <input class="form-check-input" type="radio" name="q1" id="q1-3">
+                                                                <input class="form-check-input" type="radio" name="q1" id="q1-3" value="ans1-3">
                                                                 <label class="form-check-label" for="q1-3">
                                                                     Both (10,1)and(−4,3)
                                                                 </label>
                                                                 </div>
                                                                 <div class="form-check">
-                                                                <input class="form-check-input" type="radio" name="q1" id="q1-4">
+                                                                <input class="form-check-input" type="radio" name="q1" id="q1-4" value="ans1-4">
                                                                 <label class="form-check-label" for="q1-4">
                                                                     Neither
                                                                 </label>
                                                                 </div>
                                                                 <div>
-                                                                    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                                                                    <button onclick="checkAnswer1()" class="btn btn-primary mt-2">Submit</button>
+
+                                                                    <div id="right1" class="alert alert-warning alert-dismissible fade show d-none" role="alert">
+                                                                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                                                    </div>
+
+                                                                    <script>
+                                                                        function checkAnswer1() {
+                                                                          var selectedOption = document.querySelector('input[name="q1"]:checked');
+                                                                          if (selectedOption) {
+                                                                            var answer = selectedOption.value;
+                                                                            if (answer === 'ans1-3') { 
+                                                                                alert('Correct answer!');
+                                                                            } 
+                                                                            else { alert('Wrong answer. Try again!'); }
+                                                                          } else { alert('Please select an option.'); }
+                                                                        }
+                                                                    </script>
+
                                                                 </div>
 
                                                             </div>
-
+                                                            <!-- QUESTION 2 -->
                                                             <div class="tab-pane fade" id="v-pills-q-2" role="tabpanel" aria-labelledby="v-pills-q-2-tab" tabindex="0">
 
                                                                 <h5>Which ordered pair is a solution of the equation?</h5>
@@ -326,7 +345,7 @@
                                                                 </div>
 
                                                             </div>
-
+                                                            <!-- QUESTION 3 -->
                                                             <div class="tab-pane fade" id="v-pills-q-3" role="tabpanel" aria-labelledby="v-pills-q-3-tab" tabindex="0">
 
                                                                 <h5>Which ordered pair is a solution of the equation?</h5>
@@ -358,7 +377,7 @@
                                                                 </div>
 
                                                             </div>
-
+                                                            <!-- QUESTION 4 -->
                                                             <div class="tab-pane fade" id="v-pills-q-4" role="tabpanel" aria-labelledby="v-pills-q-4-tab" tabindex="0">
 
                                                                 <h5>Which ordered pair is a solution of the equation?</h5>

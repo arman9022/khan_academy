@@ -1,46 +1,62 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  </head>
-  <body>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiple Choice Question</title>
+  <style>
+    #question {
+      font-weight: bold;
+    }
 
-    <div class="d-flex align-items-start">
+    .option {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Multiple Choice Question</h1>
 
-      <div class="nav flex-column nav-pills me-3" id="v-pills-tab-1" role="tablist" aria-orientation="vertical">
-        <button class="nav-link active" id="v-pills-home-1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home-1" type="button" role="tab" aria-controls="v-pills-home-1" aria-selected="true">Home</button>
-        <button class="nav-link" id="v-pills-profile-1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile-1" type="button" role="tab" aria-controls="v-pills-profile-1" aria-selected="false">Profile</button>
-      </div>
+  <div id="question">
+    Which is the largest planet in our solar system?
+  </div>
 
-      <div class="tab-content" id="v-pills-tabContent-1">
-        <div class="tab-pane fade show active" id="v-pills-home-1" role="tabpanel" aria-labelledby="v-pills-home-1-tab" tabindex="0">Home</div>
-        <div class="tab-pane fade" id="v-pills-profile-1" role="tabpanel" aria-labelledby="v-pills-profile-1-tab" tabindex="0">Profile</div>
-      </div>
+  <div class="option">
+    <input type="radio" name="answer" value="a">
+    <label>Jupiter</label>
+  </div>
 
-    </div>
-    <hr>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
+  <div class="option">
+    <input type="radio" name="answer" value="b">
+    <label>Saturn</label>
+  </div>
 
-          <div class="nav nav-pills me-3" id="v-pills-tab-1" role="tablist" aria-orientation="vertical">
-            <button class="nav-link active" id="v-pills-home-2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home-2" type="button" role="tab" aria-controls="v-pills-home-2" aria-selected="true">Home</button>
-            <button class="nav-link" id="v-pills-profile-2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile-2" type="button" role="tab" aria-controls="v-pills-profile-2" aria-selected="false">Profile</button>
-          </div>
+  <div class="option">
+    <input type="radio" name="answer" value="c">
+    <label>Neptune</label>
+  </div>
 
-        </div>
-      </div>
-    </div>
+  <div class="option">
+    <input type="radio" name="answer" value="d">
+    <label>Mars</label>
+  </div>
 
-      <div class="tab-content" id="v-pills-tabContent-1">
-        <div class="tab-pane fade show active" id="v-pills-home-2" role="tabpanel" aria-labelledby="v-pills-home-2-tab" tabindex="0">Home</div>
-        <div class="tab-pane fade" id="v-pills-profile-2" role="tabpanel" aria-labelledby="v-pills-profile-2-tab" tabindex="0">Profile</div>
-      </div>
+  <button onclick="checkAnswer()">Submit</button>
 
+  <script>
+    function checkAnswer() {
+      var selectedOption = document.querySelector('input[name="answer"]:checked');
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  </body>
+      if (selectedOption) {
+        var answer = selectedOption.value;
+
+        if (answer === 'a') {
+          alert('Correct answer!');
+        } else {
+          alert('Wrong answer. Try again!');
+        }
+      } else {
+        alert('Please select an option.');
+      }
+    }
+  </script>
+</body>
 </html>
