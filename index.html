@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Khan Academy</title>
+        <link rel="shortcut icon" href="" type="image/x-icon">
+
+        <!-- bootstrap css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        
+        <!-- bootstrap icon -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+        <style>
+            .nav-link {
+                display: flex;
+                padding: 1rem var(--bs-nav-link-padding-x);
+                font-size: var(--bs-nav-link-font-size);
+                font-weight: 500;
+                color: black;
+                text-decoration: none;
+                background: 0 0;
+                border: 0;
+                border-radius: 0 !important;
+                transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+                border-left: 5px solid transparent;
+                border-bottom: 1px solid gray;
+            }
+            .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+                color: rgb(46, 46, 255);
+                background-color: #DAE6FD;
+                border-left: 5px solid rgb(46, 46, 255);
+            }
+            .nav-link:hover {
+                color: rgb(46, 46, 255);
+                background-color: #efeaea;
+            }
+            
+        </style>
+
+    </head>
+    <body style="background: #F7F8FA;">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 py-2 d-md-block d-none">
+                    <!-- LEFT -->
+                    <div class="card bg-white" style="height: 97vh;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 py-3 d-flex align-items-center">
+                                    <i class="bi bi-book-half fs-2 px-3 "></i>
+                                    <h5 >Class 11 math (India)</h5>
+                                </div>
+                                <hr>
+                                <!-- LEFT MENU -->
+                                <div class="col-12" style="height: 77vh; overflow-y: scroll;">
+                                    
+                                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                        <button class="nav-link active" id="v-pills-left-1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-left-1" type="button" role="tab" aria-controls="v-pills-left-1" aria-selected="true">
+                                            <i class="bi bi-play-btn pe-2"></i>
+                                            Intro to the Binomial...
+                                        </button>
+
+                                        <button class="nav-link" id="v-pills-left-2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-left-2" type="button" role="tab" aria-controls="v-pills-left-2" aria-selected="false">
+                                            <i class="bi bi-pencil-square pe-2"></i>
+                                            Pascal's triangle and...
+                                        </button>
+
+                                        <button class="nav-link" id="v-pills-left-3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-left-3" type="button" role="tab" aria-controls="v-pills-left-3" aria-selected="false">
+                                            <i class="bi bi-play-btn pe-2"></i>
+                                            Expanding binomials ...
+                                        </button>
+                                        <button class="nav-link" id="v-pills-left-4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-left-4" type="button" role="tab" aria-controls="v-pills-left-4" aria-selected="false">
+                                            <i class="bi bi-play-btn pe-2"></i>
+                                            Expand binomials ...
+                                        </button>
+                                        <button class="nav-link" id="v-pills-left-5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-left-5" type="button" role="tab" aria-controls="v-pills-left-5" aria-selected="false">
+                                            <i class="bi bi-play-btn pe-2"></i>
+                                            Expanding binomials...
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8">
+                    <div class="bg-white" style="height: 100vh; border-left:1px solid gray; ">
+
+                        <div class="tab-content" id="v-pills-tabContent">
+
+                            <div class="tab-pane fade show active" id="v-pills-left-1" role="tabpanel" aria-labelledby="v-pills-left-1-tab" tabindex="0">
+
+                                <!-- RIGHT TOP -->
+                                <div style="height: 90vh;overflow-y: scroll;">
+                                    <div class="container pb-5">
+                                        <div class="row">
+                                            <div class="col-12 text-center py-3">
+                                                <h3>Expanding binomials w/o Pascal's triangle</h3>
+                                                <p>Google Classroom</p>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-8">
+                                                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/nUVoqLhsFGo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 py-5">
+
+                                                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                                    <li class="nav-item" role="presentation">
+                                                      <button class="nav-link active" id="pills-right-first-1-tab" data-bs-toggle="pill" data-bs-target="#pills-right-first-1" type="button" role="tab" aria-controls="pills-right-first-1" aria-selected="true">About</button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                      <button class="nav-link" id="pills-right-first-2-tab" data-bs-toggle="pill" data-bs-target="#pills-right-first-2" type="button" role="tab" aria-controls="pills-right-first-2" aria-selected="false">Transcript</button>
+                                                    </li>
+                                                  </ul>
+                                                  <div class="tab-content" id="pills-tabContent">
+                                                    <div class="tab-pane fade show active" id="pills-right-first-1" role="tabpanel" aria-labelledby="pills-right-first-1-tab" tabindex="0">
+                                                        Sal gives a "trick" for expanding large powers of binomials, without using Pascal's triangle. Created by Sal Khan.
+                                                    </div>
+                                                    <div class="tab-pane fade ps-5" id="pills-right-first-2" role="tabpanel" aria-labelledby="pills-right-first-2-tab" tabindex="0" style="height: 40vh; overflow-y: scroll;">
+                                                        <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officiis.</a> <br>
+                                                        <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officiis.</a> <br>
+                                                        <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officiis.</a> <br>
+                                                        <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officiis.</a> <br>
+                                                        <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officiis.</a> <br>
+                                                        <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officiis.</a> <br>
+                                                        <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officiis.</a> <br>
+                                                        <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officiis.</a> <br>
+                                                        <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officiis.</a> <br>
+                                                        <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officiis.</a> <br>
+                                                        <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officiis.</a> <br>
+                                                        <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officiis.</a> <br>
+                                                        <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officiis.</a> <br>
+                                                        <a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officiis.</a> <br>
+                                                    </div>
+                                                  </div>                                             
+
+                                            </div>
+
+                                            <hr>
+
+                                            <!-- COMMENT SECTION -->
+                                            <div class="col-12">
+
+                                                <div class="row">
+                                                    <div class="col-1">
+                                                        <img src="./assets/img/duskpin-seedling.svg" class="p-2" style="height: 50px; width: 50px;border: 1px solid gray;border-radius: 100%;" alt="">
+                                                    </div>
+                                                    <div class="col-11">
+                                                        <div class="row d-block">
+                                                            <span class="fs-5 fw-bold">Ariana Riofrio</span>
+                                                            <span>6 years ago</span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <p>If x is an irregular number such as pi, can the equation still be linear? Thanks!!</p>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-4">
+                                                                <a class="text-decoration-none fw-bold me-3">Answer</a>
+                                                                <a class="text-decoration-none fw-bold">Comment</a>
+                                                            </div>
+                                                            <div class="col-8 text-end">
+                                                                <span class="pe-3">(29 votes)</span>
+                                                                <i class="bi bi-caret-up"></i> <span class="pe-3">Upvote</span>
+                                                                <i class="bi bi-caret-down"></i> <span class="pe-3">Downvote</span>
+                                                                <i class="bi bi-flag"></i> <span class="pe-3">Flag</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row ps-5 pt-3">
+                                                    <div class="col-1">
+                                                        <img src="./assets/img/duskpin-seedling.svg" class="p-2" style="height: 50px; width: 50px;border: 1px solid gray;border-radius: 100%;" alt="">
+                                                    </div>
+                                                    <div class="col-11">
+                                                        <div class="row d-block">
+                                                            <span class="fs-5 fw-bold">Ariana Riofrio</span>
+                                                            <span>6 years ago</span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <p>If x is an irregular number such as pi, can the equation still be linear? Thanks!!</p>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-4">
+                                                                <a class="text-decoration-none fw-bold me-3">Answer</a>
+                                                                <a class="text-decoration-none fw-bold">Comment</a>
+                                                            </div>
+                                                            <div class="col-8 text-end">
+                                                                <span class="pe-3">(29 votes)</span>
+                                                                <i class="bi bi-caret-up"></i> <span class="pe-3">Upvote</span>
+                                                                <i class="bi bi-caret-down"></i> <span class="pe-3">Downvote</span>
+                                                                <i class="bi bi-flag"></i> <span class="pe-3">Flag</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row ps-5 pt-3">
+                                                    <div class="col-1">
+                                                        <img src="./assets/img/duskpin-seedling.svg" class="p-2" style="height: 50px; width: 50px;border: 1px solid gray;border-radius: 100%;" alt="">
+                                                    </div>
+                                                    <div class="col-11">
+                                                        <div class="row d-block">
+                                                            <span class="fs-5 fw-bold">Ariana Riofrio</span>
+                                                            <span>6 years ago</span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <p>If x is an irregular number such as pi, can the equation still be linear? Thanks!!</p>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-4">
+                                                                <a class="text-decoration-none fw-bold me-3">Answer</a>
+                                                                <a class="text-decoration-none fw-bold">Comment</a>
+                                                            </div>
+                                                            <div class="col-8 text-end">
+                                                                <span class="pe-3">(29 votes)</span>
+                                                                <i class="bi bi-caret-up"></i> <span class="pe-3">Upvote</span>
+                                                                <i class="bi bi-caret-down"></i> <span class="pe-3">Downvote</span>
+                                                                <i class="bi bi-flag"></i> <span class="pe-3">Flag</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row ps-3">
+                                                   <a class="fw-bold text-decoration-none">Read More ...</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- RIGHT BOTTOM -->
+                                <div style="height: 10vh; border-top: 1px solid gray; align-items: center; display: flex; justify-content: end;">
+                                    <a onclick="document.getElementById('v-pills-left-2-tab')" class="btn btn-primary fw-bold">Up Next: Video</a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="tab-pane fade" id="v-pills-left-2" role="tabpanel" aria-labelledby="v-pills-left-2-tab" tabindex="0">
+
+                                <!-- RIGHT TOP -->
+                                <div style="height: 90vh;overflow-y: scroll;">
+
+                                    <div class="container pb-5">
+                                        <div class="row">
+                                            <div class="col-12 text-center py-3">
+                                                <h3>Solutions to 2-variable equations</h3>
+                                                <p>Google Classroom</p>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-10">
+                                                        <hr>
+
+                                                        <div class="tab-content" id="v-pills-tabContent">
+
+                                                            <div class="tab-pane fade show active" id="v-pills-q-1" role="tabpanel" aria-labelledby="v-pills-q-1-tab" tabindex="0">
+
+                                                                <h5>Which ordered pair is a solution of the equation?</h5>
+                                                                <h5>x+7y=17</h5>
+                                                                <p>Choose 1 answer:</p>
+                                                                <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="q1" id="q1-1">
+                                                                <label class="form-check-label" for="q1-1">
+                                                                    Only (10,1)(10,1)
+                                                                </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="q1" id="q1-2">
+                                                                <label class="form-check-label" for="q1-2">
+                                                                    Only (−4,3)(−4,3)
+                                                                </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="q1" id="q1-3">
+                                                                <label class="form-check-label" for="q1-3">
+                                                                    Both (10,1)and(−4,3)
+                                                                </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="q1" id="q1-4">
+                                                                <label class="form-check-label" for="q1-4">
+                                                                    Neither
+                                                                </label>
+                                                                </div>
+                                                                <div>
+                                                                    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="tab-pane fade" id="v-pills-q-2" role="tabpanel" aria-labelledby="v-pills-q-2-tab" tabindex="0">
+
+                                                                <h5>Which ordered pair is a solution of the equation?</h5>
+                                                                <h5>y=−6x+1</h5>
+                                                                <p>Choose 1 answer:</p>
+                                                                <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="q2" id="q2-1">
+                                                                <label class="form-check-label" for="q2-1">
+                                                                    Only (−2,13)
+                                                                </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="q2" id="q2-2">
+                                                                <label class="form-check-label" for="q2-2">
+                                                                    Only (−1,7)
+                                                                </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="q2" id="q2-3">
+                                                                <label class="form-check-label" for="q2-3">
+                                                                    Both (−2,13)and (−1,7)
+                                                                </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="q2" id="q2-4">
+                                                                <label class="form-check-label" for="q2-4">
+                                                                    Neither
+                                                                </label>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="tab-pane fade" id="v-pills-q-3" role="tabpanel" aria-labelledby="v-pills-q-3-tab" tabindex="0">
+
+                                                                <h5>Which ordered pair is a solution of the equation?</h5>
+                                                                <h5>−3x−y=6</h5>
+                                                                <p>Choose 1 answer:</p>
+                                                                <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="q3" id="q3-1">
+                                                                <label class="form-check-label" for="q3-1">
+                                                                    Only (-4,4)
+                                                                </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="q3" id="q3-2">
+                                                                <label class="form-check-label" for="q3-2">
+                                                                    Only (−3,3)
+                                                                </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="q3" id="q3-3">
+                                                                <label class="form-check-label" for="q3-3">
+                                                                    Both (-4,4)and(−3,3)
+                                                                </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="q3" id="q3-4">
+                                                                <label class="form-check-label" for="q3-4">
+                                                                    Neither
+                                                                </label>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="tab-pane fade" id="v-pills-q-4" role="tabpanel" aria-labelledby="v-pills-q-4-tab" tabindex="0">
+
+                                                                <h5>Which ordered pair is a solution of the equation?</h5>
+                                                                <h5>−3x+5y=2x+3y</h5>
+                                                                <p>Choose 1 answer:</p>
+                                                                <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="q4" id="q4-1">
+                                                                <label class="form-check-label" for="q4-1">
+                                                                    Only (2,4)
+                                                                </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="q4" id="q4-2">
+                                                                <label class="form-check-label" for="q4-2">
+                                                                    Only (3,3)
+                                                                </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="q4" id="q4-3">
+                                                                <label class="form-check-label" for="q4-3">
+                                                                    Both (2,4)and(3,3)
+                                                                </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="q4" id="q4-4">
+                                                                <label class="form-check-label" for="q4-4">
+                                                                    Neither
+                                                                </label>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                                <!-- RIGHT BOTTOM -->
+                                <div style="height: 10vh; border-top: 1px solid gray; align-items: center; display: flex; justify-content: end;">
+
+                                    <div class="nav nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                        <button class="nav-link active" id="v-pills-q-1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-q-1" type="button" role="tab" aria-controls="v-pills-q-1" aria-selected="true">Q 1</button>
+                                        <button class="nav-link" id="v-pills-q-2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-q-2" type="button" role="tab" aria-controls="v-pills-q-2" aria-selected="false">Q 2</button>
+                                        <button class="nav-link" id="v-pills-q-3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-q-3" type="button" role="tab" aria-controls="v-pills-q-3" aria-selected="false">Q 3</button>
+                                        <button class="nav-link" id="v-pills-q-4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-q-4" type="button" role="tab" aria-controls="v-pills-q-4" aria-selected="false">Q 4</button>
+                                    </div>  
+
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- bootstrap js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        
+    </body>
+</html>
